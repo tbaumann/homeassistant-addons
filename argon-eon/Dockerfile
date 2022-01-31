@@ -6,7 +6,9 @@ FROM $BUILD_FROM
 ARG TEMPIO_VERSION BUILD_ARCH
 RUN \
     curl -sSLf -o /usr/bin/tempio \
-    "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}"
+    "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}" && \
+    apk add --no-cache i2c-tools py3-smbus py3-rpigpio py3-pyserial
+
 
 # Copy root filesystem
 COPY rootfs /
