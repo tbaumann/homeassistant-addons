@@ -15,6 +15,12 @@ message=$(bashio::config 'message')
 ## Print the message the user supplied, defaults to "Hello World..."
 bashio::log.info "${message:="Hello World..."}"
 
-## Run your program
-# exec my_program --with-params
-exec cat 
+
+if bashio::addon.protected
+then
+  bashio::log.error "Can't run in protected mode"
+  sleep 9999
+else
+  bashio::log.info "Starting argononed"
+  exec /usr/bin/python3 /etc/argon/argononed.py SERVICE
+fi

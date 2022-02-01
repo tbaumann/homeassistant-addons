@@ -73,10 +73,10 @@ def shutdown_check(writeq):
 			# Testing
 			#writeq.put("OLEDSWITCH")
 			writeq.put("OLEDSTOP")
-			os.system("reboot")
+			os.system("/etc/argon/restart.bashio")
 		elif pulsetime >=4 and pulsetime <=5:
 			writeq.put("OLEDSTOP")
-			os.system("shutdown now -h")
+			os.system("/etc/argon/shutdown.bashio")
 		elif pulsetime >=6 and pulsetime <=7:
 			writeq.put("OLEDSWITCH")
 
