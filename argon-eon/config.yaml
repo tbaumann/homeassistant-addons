@@ -12,7 +12,8 @@ init: false
 gpio: true
 #devicetree: true
 
-privileged: SYS_RAWIO
+privileged: 
+  -  SYS_RAWIO
 devices:
   - /dev/i2c-1
 apparmor: false
