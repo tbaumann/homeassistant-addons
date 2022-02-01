@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Argon Eon Support
-version: "1.1.1"
+version: "1.1.3"
 slug: argon-eon
 description: Example add-on
 url: "https://github.com/home-assistant/addons-example/tree/main/example"
@@ -9,8 +9,12 @@ arch:
   - armv7
   - aarch64
 init: false
-gpio: true
-devicetree: true
+#gpio: true
+#devicetree: true
+
+full_access: true
+devices:
+  - /dev/i2c-1
 hassio_api: true
 options:
   message: "FIXME Hello world..."
