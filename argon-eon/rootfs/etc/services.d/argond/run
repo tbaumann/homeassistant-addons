@@ -19,8 +19,9 @@ bashio::log.info "${message:="Hello World..."}"
 if bashio::addon.protected
 then
   bashio::log.error "Can't run in protected mode"
-  sleep 9999
+  #sleep 9999
 else
-  bashio::log.info "Starting argononed"
-  exec /usr/bin/python3 /etc/argon/argononed.py SERVICE
+  bashio::log.info "Not protected"
 fi
+bashio::log.info "Starting argononed"
+exec /usr/bin/python3 /etc/argon/argononed.py SERVICE
