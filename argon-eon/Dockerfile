@@ -13,3 +13,4 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+RUN chmod +x /etc/services.d/argond/*
