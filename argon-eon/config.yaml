@@ -10,13 +10,10 @@ arch:
   - aarch64
 init: false
 gpio: true
-full_access: true
+#full_access: true
+uart: true
 devices:
   - /dev/i2c-1
 apparmor: false
 hassio_api: true
-options:
-  message: "FIXME Hello world..."
-schema:
-  message: "str?"
 # image: "ghcr.io/home-assistant/{arch}-addon-example"
