@@ -10,12 +10,8 @@ Add-on documentation: <https://developers.home-assistant.io/docs/add-ons>
 
 This repository contains the following add-ons
 
-### [Example add-on](./example)
+### [Argpon Eon Support](./argon-eon)
 
 ![Supports aarch64 Architecture][aarch64-shield]
-
-_My custom addons._
-
-
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
