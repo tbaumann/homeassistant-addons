@@ -1,6 +1,4 @@
-# Home Assistant Add-on: Example add-on
-
-_Example add-on to use as a blueprint for new add-ons._
+# Home Assistant Add-on: Argon eon support 
 
 
 Preparation
