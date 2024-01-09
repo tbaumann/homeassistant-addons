@@ -5,5 +5,5 @@ labels:
   org.opencontainers.image.description: "Argon Eon fan and oled controller"
   org.opencontainers.image.source: "https://github.com/tbaumann/homeassistant-addons/tree/main/argon-eon"
   org.opencontainers.image.licenses: "Apache License 2.0"
-#args:
-#  TEMPIO_VERSION: "2021.05.0"
+args:
+  TEMPIO_VERSION: "2021.09.0"
