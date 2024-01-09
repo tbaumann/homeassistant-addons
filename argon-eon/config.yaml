@@ -16,4 +16,5 @@ devices:
   - /dev/i2c-1
 apparmor: false
 hassio_api: true
+devicetree: true
 # image: "ghcr.io/home-assistant/{arch}-addon-example"
