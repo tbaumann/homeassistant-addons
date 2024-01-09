@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Argon Eon Support
-version: "1.1.10"
+version: "1.1.11"
 slug: argon-eon
 description: Argon Eon fan and oled controller
 url: "https://github.com/tbaumann/homeassistant-addons/tree/main/argon-eon"
