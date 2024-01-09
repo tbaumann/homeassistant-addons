@@ -3,7 +3,7 @@ name: Argon Eon Support
 version: "1.1.9"
 slug: argon-eon
 description: Example add-on
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/tbaumann/homeassistant-addons/"
 arch:
   - armhf
   - armv7
