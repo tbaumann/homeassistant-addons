@@ -10,6 +10,8 @@ RUN \
     apk add --no-cache i2c-tools py3-smbus  py3-pyserial py3-pip python3-dev gcc musl-dev py3-rpigpio 
 
 
+RUN mkdir -p /sys/firmware/devicetree/ ; ln -s /device-tree /sys/firmware/devicetree/base
+
 # Copy root filesystem
 COPY rootfs /
 RUN chmod +x /etc/services.d/argond/*
