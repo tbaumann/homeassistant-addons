@@ -1,5 +1,5 @@
 name: Argon Eon Support
-version: "1.1.14"
+version: "1.1.15"
 slug: argon-eon
 description: Argon Eon fan and oled controller
 url: "https://github.com/tbaumann/homeassistant-addons/tree/main/argon-eon"
@@ -12,5 +12,6 @@ full_access: true
 uart: true
 devices:
   - /dev/i2c-1
+  - /sys/firmware/devicetree
 apparmor: false
   #devicetree: true
