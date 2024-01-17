@@ -1,24 +1,9 @@
-# Home Assistant Add-on: Argon eon support 
+# Home Assistant Add-on: Argon eon support [BROKEN!]
 
 
-Preparation
+This addon is broken since https://github.com/moby/moby/pull/26618
 
-Add to `/mnt/boot/config.txt`
-
-```
-dtparam=i2c_arm=on
-dtparam=i2s=on
-
-Uncomnent this if you want to run the lirc component
-#dtoverlay=gpio-ir,gpio_pin=23
-```
-
-Creat this file `/mnt/overlay/etc/modules-load.d/i2c-dev.conf` 
-
-```
-i2c-dev
-```
-
+WONTFIX. I no longer use this hardware. Ping me if you need it.
 
 ![Supports aarch64 Architecture][aarch64-shield]
 

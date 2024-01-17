@@ -8,10 +8,8 @@ arch:
 startup: services
 init: false
 gpio: true
-full_access: true
 uart: true
 devices:
   - /dev/i2c-1
-  - /sys/firmware/devicetree
 apparmor: false
-  #devicetree: true
+devicetree: true
